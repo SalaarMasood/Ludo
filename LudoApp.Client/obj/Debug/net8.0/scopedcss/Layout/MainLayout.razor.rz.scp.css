@@ -1,0 +1,35 @@
+.page[b-0o29amqje8] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-0o29amqje8] {
+    flex: 1;
+    background-color: #F8F9FA; 
+}
+
+.sidebar[b-0o29amqje8] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+@media (max-width: 640.98px) {
+}
+
+@media (min-width: 641px) {
+    .page[b-0o29amqje8] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-0o29amqje8] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    article[b-0o29amqje8] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

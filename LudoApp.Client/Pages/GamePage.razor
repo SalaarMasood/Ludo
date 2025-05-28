@@ -1,0 +1,206 @@
+@page "/newgame/{GameId}"
+@inject NavigationManager Navigation
+@inject LudoApp.Client.Services.GameClientService GameService
+@inject LudoApp.Client.Services.AuthService AuthService
+@using LudoApp.Shared
+@using LudoGame.Core 
+
+<h3>Ludo Game: @GameId</h3>
+
+@if (gameState == null)
+{
+    <p>Loading game state or connecting...</p>
+    <div class="spinner-border text-info" role="status"></div>
+}
+else
+{
+    <div class="game-container text-center">
+        <h4>Players:</h4>
+        <ul>
+            <!-- MODIFIED: Loop directly over gameState.Players (which are now PlayerDto) -->
+            @foreach (var player in gameState.Players)
+            {
+                <li style="color: @player.Color;">@player.Username (@player.Color) - @(player.ConnectionId == myConnectionId ? "(You)" : "")</li>
+
+                <div class="player-pieces-display">
+                    <p class="mb-1">
+                        Pieces:
+                        <!-- MODIFIED: Loop directly over player.Pieces (which are now PieceDto) -->
+                        @foreach (var piece in player.Pieces)
+                        {
+                            <span @key="piece.Id"
+                                  class="badge @(piece.IsAtHome ? "bg-success" : "bg-primary") me-1" 
+                                  style="cursor: pointer;">
+                                @($"P{piece.Id} (Pos: {piece.Position})")
+                            </span>
+                        }
+                    </p>
+                </div>
+            }
+        </ul>
+
+        <h4 class="mt-4">Current Phase: @gameState.Phase</h4>
+        <h4>Current Player: @(gameState.Players.FirstOrDefault(p => p.Id == gameState.CurrentPlayerId)?.Username)</h4>
+        <h4>Dice Roll: @gameState.DiceRoll</h4>
+
+        <div class="alert alert-info mt-3">
+            @gameState.Message
+        </div>
+
+        @if (gameState.Phase == GamePhase.RollingDice && IsMyTurn())
+        {
+            <button class="btn btn-warning btn-lg mt-3" @onclick="RollDice">Roll Dice</button>
+        }
+        else if (gameState.Phase == GamePhase.MovingPiece && IsMyTurn())
+        {
+            <p class="h5 mt-3">Click a piece to move! (Dice Roll: @gameState.DiceRoll)</p>
+            @foreach(var player in gameState.Players.Where(p => p.ConnectionId == myConnectionId)) {
+                @foreach(var piece in player.Pieces) { 
+                    <!-- When dice roll is 6, show ALL pieces including those at home -->
+                    @if (!piece.IsAtHome || gameState.DiceRoll == 6)
+                    {
+                        <button @key="piece.Id" class="btn btn-outline-@(player.Color.ToLower()) btn-sm m-1"
+                                @onclick="() => MakeMove(piece.Id)">
+                            @($"P{piece.Id} (Pos: {piece.Position})")
+                            @(piece.IsAtHome ? " (Move out of home)" : "")
+                        </button>
+                    }
+                }
+            }
+        }
+        else if (gameState.Phase == GamePhase.GameOver)
+        {
+            <h4 class="mt-4">Game Over! Winner: <span style="color: @gameState.WinnerColor;">@gameState.WinnerColor</span></h4>
+            <button class="btn btn-success mt-3" @onclick="PlayAgain">Play Again</button>
+        }
+        else
+        {
+            <p class="mt-3">Waiting for opponent...</p>
+        }
+
+        <div class="mt-5">
+            <button class="btn btn-danger" @onclick="ForfeitGame">Forfeit Game</button>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string? GameId { get; set; }
+
+    private GameStateDto? gameState;
+    private string? myConnectionId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!AuthService.IsLoggedIn)
+        {
+            Navigation.NavigateTo("/login"); // Ensure user is logged in
+            return;
+        }
+
+        await GameService.StartConnectionAsync();
+        myConnectionId = GameService.ConnectionId; 
+        Console.WriteLine($"[GamePage.razor] My connection ID: {myConnectionId}");
+
+        GameService.OnGameStateUpdated += HandleGameStateUpdate;
+        GameService.OnGameEnded += HandleGameEnded;
+        GameService.OnGameError += HandleGameError;
+        GameService.OnInvalidAction += HandleInvalidAction;
+
+        if (!string.IsNullOrEmpty(GameId))
+        {
+            Console.WriteLine($"[GamePage.razor] Requesting initial game state for GameId: {GameId}");
+            await GameService.RequestGameStateAsync(GameId!);
+        }
+    }
+
+    private void HandleGameStateUpdate(GameStateDto newState)
+    {
+        Console.WriteLine($"[GamePage.razor] Received state update for GameId: {newState.GameId}, Phase: {newState.Phase}, Dice: {newState.DiceRoll}");
+        foreach (var p in newState.Players)
+        {
+            Console.WriteLine($"  Client-side Player {p.Username} ({p.Color}): Pieces = {string.Join(", ", p.Pieces.Select(pc => $"P{pc.Id}@{pc.Position}"))}");
+        }
+        Console.WriteLine("--------------------------------------------------");
+
+        gameState = newState;
+        InvokeAsync(StateHasChanged);
+        Console.WriteLine("[GamePage.razor] StateHasChanged invoked.");
+    }
+
+    private void HandleGameEnded(GameStateDto finalState)
+    {
+        gameState = finalState;
+        InvokeAsync(StateHasChanged);
+        Console.WriteLine($"[GamePage.razor] Game {GameId} ended. Winner: {finalState.WinnerColor}");
+    }
+
+    private void HandleGameError(string message)
+    {
+        Console.Error.WriteLine($"[GamePage.razor] Game error: {message}");
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void HandleInvalidAction(string message)
+    {
+        Console.Error.WriteLine($"[GamePage.razor] Invalid action: {message}");
+        InvokeAsync(StateHasChanged);
+    }
+
+    private bool IsMyTurn()
+    {
+        // Now comparing with PlayerDto's Id
+        return gameState?.Players?.FirstOrDefault(p => p.Id == gameState.CurrentPlayerId)?.ConnectionId == myConnectionId;
+    }
+
+    private async Task RollDice()
+    {
+        if (gameState != null && IsMyTurn() && gameState.Phase == GamePhase.RollingDice)
+        {
+            await GameService.RollDiceAsync(GameId!);
+        }
+    }
+
+    private async Task MakeMove(int pieceId)
+    {
+        Console.WriteLine($"[GamePage.razor] MakeMove called with pieceId: {pieceId}");
+        
+        if (gameState != null && IsMyTurn() && gameState.Phase == GamePhase.MovingPiece)
+        {
+            var moveDto = new ClientMoveDto { GameId = GameId!, PieceId = pieceId };
+            Console.WriteLine($"[GamePage.razor] Sending move: GameId={moveDto.GameId}, PieceId={moveDto.PieceId}");
+            await GameService.MakeMoveAsync(moveDto);
+        }
+        else
+        {
+            Console.WriteLine("[GamePage.razor] Move conditions not met - GameState null? {0}, IsMyTurn? {1}, Phase? {2}",
+                gameState == null, IsMyTurn(), gameState?.Phase);
+        }
+    }
+
+    private async Task ForfeitGame()
+    {
+        Console.WriteLine("[GamePage.razor] Forfeiting game...");
+        await GameService.ForfeitGameAsync(GameId!);
+        Navigation.NavigateTo("/home");
+    }
+
+    private void PlayAgain()
+    {
+        Navigation.NavigateTo("/newgame/waiting");
+    }
+
+    private void UnsubscribeFromEvents()
+    {
+        GameService.OnGameStateUpdated -= HandleGameStateUpdate;
+        GameService.OnGameEnded -= HandleGameEnded;
+        GameService.OnGameError -= HandleGameError;
+        GameService.OnInvalidAction -= HandleInvalidAction;
+    }
+
+    public void Dispose()
+    {
+        UnsubscribeFromEvents();
+    }
+}

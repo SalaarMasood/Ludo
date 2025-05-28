@@ -1,0 +1,24 @@
+@page "/"
+@inject NavigationManager Navigation // For navigating to other pages
+
+<div class="text-center mt-5">
+    <h1>Welcome to Ludo!</h1>
+    <p class="lead">Sign up or Login to start playing.</p>
+
+    <div class="mt-4">
+        <button class="btn btn-primary btn-lg me-3" @onclick="GoToLogin">Login</button>
+        <button class="btn btn-success btn-lg" @onclick="GoToSignup">Sign Up</button>
+    </div>
+</div>
+
+@code {
+    private void GoToLogin()
+    {
+        Navigation.NavigateTo("/login"); // We will create this page next
+    }
+
+    private void GoToSignup()
+    {
+        Navigation.NavigateTo("/signup"); // This is the page we just created
+    }
+}

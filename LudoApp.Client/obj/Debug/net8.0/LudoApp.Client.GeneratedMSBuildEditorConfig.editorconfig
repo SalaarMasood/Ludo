@@ -1,0 +1,63 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = LudoApp.Client
+build_property.RootNamespace = LudoApp.Client
+build_property.ProjectDir = C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/GamePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/NewGameWaiting.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3R2FtZVdhaXRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Pages/Signup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbnVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0o29amqje8
+
+[C:/Users/Salaar Masood/Downloads/Hadeed/ludo/LudoApp.Client/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mosfjutva8

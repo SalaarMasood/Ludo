@@ -1,0 +1,15 @@
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\bin\Debug\net8.0\LudoApp.Shared.deps.json
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\bin\Debug\net8.0\LudoApp.Shared.dll
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\bin\Debug\net8.0\LudoApp.Shared.pdb
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\bin\Debug\net8.0\LudoGame.Core.dll
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\bin\Debug\net8.0\LudoGame.Core.pdb
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.csproj.AssemblyReference.cache
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.AssemblyInfo.cs
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp..480289A5.Up2Date
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.dll
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\refint\LudoApp.Shared.dll
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\LudoApp.Shared.pdb
+C:\Users\Salaar Masood\Downloads\Hadeed\ludo\LudoApp.Shared\obj\Debug\net8.0\ref\LudoApp.Shared.dll

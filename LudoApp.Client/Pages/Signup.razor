@@ -1,0 +1,93 @@
+@page "/signup" // Defines the route for this page
+@inject HttpClient Http // Injects HttpClient for making API calls
+@inject NavigationManager Navigation // For navigating after successful signup
+
+@using LudoApp.Shared 
+
+<h3>Sign Up</h3>
+
+<!-- EditForm is Blazor's way to handle forms with data binding and validation -->
+<EditForm Model="@user" OnValidSubmit="HandleSignup">
+    <!-- DataAnnotationsValidator enables validation based on attributes in the User model -->
+    <DataAnnotationsValidator />
+    <!-- ValidationSummary displays all validation messages -->
+    <ValidationSummary class="alert alert-danger" />
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <!-- InputText for text input, @bind-Value binds it to user.Username -->
+        <InputText id="username" class="form-control" @bind-Value="user.Username" />
+        <!-- ValidationMessage displays a specific validation error for the Username property -->
+        <ValidationMessage For="@(() => user.Username)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <!-- type="password" hides the input -->
+        <InputText id="password" type="password" class="form-control" @bind-Value="user.Password" />
+        <ValidationMessage For="@(() => user.Password)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert @(isSuccess ? "alert-success" : "alert-danger") mt-3" role="alert">
+        @message
+    </div>
+}
+
+<div class="mt-3">
+    Already have an account? <NavLink href="/login">Login here</NavLink>
+</div>
+
+@code {
+    private User user = new User(); // Instance of the User model to bind the form to
+    private string? message; // To display feedback to the user (success/error)
+    private bool isSuccess; // To control the alert style (green/red)
+
+    private async Task HandleSignup()
+    {
+        message = null; // Clear any previous messages before attempting signup
+        try
+        {
+            // Send a POST request to your server's signup endpoint
+            // Http.PostAsJsonAsync serializes the 'user' object to JSON
+            var response = await Http.PostAsJsonAsync("/api/signup", user);
+
+            if (response.IsSuccessStatusCode) // Check if the HTTP status code is 2xx (Success)
+            {
+                isSuccess = true;
+                message = "Signup successful! Redirecting to login...";
+                Console.WriteLine("[CLIENT] Signup successful!");
+                // Optionally redirect to login page after a short delay
+                await Task.Delay(2000); // Wait 2 seconds
+                Navigation.NavigateTo("/login"); // Navigate to the login page (you'll create this next)
+            }
+            else
+            {
+                isSuccess = false;
+                // Read the error message provided by the server (e.g., "Username already exists.")
+                message = await response.Content.ReadAsStringAsync();
+                if (string.IsNullOrEmpty(message)) // Fallback message if server doesn't provide one
+                {
+                    message = $"Signup failed: {response.ReasonPhrase} ({response.StatusCode})";
+                }
+                Console.Error.WriteLine($"[CLIENT] Signup failed: {message}");
+            }
+        }
+        catch (HttpRequestException ex) // Catches network-related errors (e.g., server not running)
+        {
+            isSuccess = false;
+            message = $"Network error: {ex.Message}. Make sure the server is running.";
+            Console.Error.WriteLine($"[CLIENT] Network error: {ex.Message}");
+        }
+        catch (Exception ex) // Catches any other unexpected errors
+        {
+            isSuccess = false;
+            message = $"An unexpected error occurred: {ex.Message}";
+            Console.Error.WriteLine($"[CLIENT] Unexpected error: {ex.Message}");
+        }
+    }
+}

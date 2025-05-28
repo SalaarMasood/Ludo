@@ -1,0 +1,88 @@
+@page "/login"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject LudoApp.Client.Services.AuthService AuthService 
+
+@using LudoApp.Shared
+
+<h3>Login</h3>
+
+<EditForm Model="@user" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary class="alert alert-danger" />
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <InputText id="username" class="form-control" @bind-Value="user.Username" />
+        <ValidationMessage For="@(() => user.Username)" />
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <InputText id="password" type="password" class="form-control" @bind-Value="user.Password" />
+        <ValidationMessage For="@(() => user.Password)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert @(isSuccess ? "alert-success" : "alert-danger") mt-3" role="alert">
+        @message
+    </div>
+}
+
+<div class="mt-3">
+    Don't have an account? <NavLink href="/signup">Sign Up here</NavLink>
+</div>
+
+@code {
+    private User user = new User();
+    private string? message;
+    private bool isSuccess;
+
+    private async Task HandleLogin()
+    {
+        message = null;
+        try
+        {
+            var response = await Http.PostAsJsonAsync("api/login", user);
+
+            if (response.IsSuccessStatusCode)
+            {
+                isSuccess = true;
+                message = "Login successful! Redirecting to home...";
+                Console.WriteLine("[CLIENT] Login successful!");
+
+                // NEW: Inform AuthService about the successful login
+                await AuthService.LoginAsync(user.Username);
+
+                await Task.Delay(1500);
+                Navigation.NavigateTo("/home");
+            }
+            else
+            {
+                isSuccess = false;
+                message = await response.Content.ReadAsStringAsync();
+                if (string.IsNullOrEmpty(message))
+                {
+                    message = $"Login failed: {response.ReasonPhrase} ({response.StatusCode})";
+                }
+                Console.Error.WriteLine($"[CLIENT] Login failed: {message}");
+            }
+        }
+        catch (HttpRequestException ex)
+        {
+            isSuccess = false;
+            message = $"Network error: {ex.Message}. Make sure the server is running.";
+            Console.Error.WriteLine($"[CLIENT] Network error: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            isSuccess = false;
+            message = $"An unexpected error occurred: {ex.Message}";
+            Console.Error.WriteLine($"[CLIENT] Unexpected error: {ex.Message}");
+        }
+    }
+}

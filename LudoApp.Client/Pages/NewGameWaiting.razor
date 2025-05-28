@@ -1,0 +1,138 @@
+@page "/newgame/waiting"
+@inject NavigationManager Navigation
+@inject LudoApp.Client.Services.GameClientService GameService
+@inject LudoApp.Client.Services.AuthService AuthService 
+@using LudoApp.Shared
+
+<h3>Matchmaking...</h3>
+
+@if (errorMessage != null)
+{
+    <div class="alert alert-danger mt-3">@errorMessage</div>
+    <button class="btn btn-primary mt-3" @onclick="GoHome">Go Home</button>
+}
+else if (playerWaiting)
+{
+    <p class="lead">Waiting for 3 other players to join. You are: <b>@AuthService.Username</b></p>
+    <p>This may take a moment. Please wait...</p>
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="mt-3">
+        <button class="btn btn-warning" @onclick="CancelMatchmaking">Cancel</button>
+    </div>
+}
+else if (gameStarted)
+{
+    <p class="lead">Match found! Starting game in a moment...</p>
+    <p>Game ID: <span class="fw-bold">@gameId</span></p>
+    <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+}
+else
+{
+    <p class="lead">Initializing matchmaking. If nothing happens, refresh or go back home.</p>
+}
+
+@code {
+    private bool playerWaiting = false;
+    private bool gameStarted = false;
+    private string? gameId;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!AuthService.IsLoggedIn)
+        {
+            errorMessage = "You must be logged in to join matchmaking.";
+            Navigation.NavigateTo("/login"); // Redirect to login if not authenticated
+            return;
+        }
+
+        // Subscribe to GameService events
+        GameService.OnWaitingForPlayers += HandleWaitingForPlayers;
+        GameService.OnGameStarted += HandleGameStarted;
+        GameService.OnMatchmakingCancelled += HandleMatchmakingCancelled;
+        GameService.OnMatchmakingError += HandleMatchmakingError;
+
+        // Ensure SignalR connection is active (optional, FindMatchAsync usually handles it)
+        await GameService.StartConnectionAsync();
+
+        // Set waiting state initially, FindMatchAsync was called from Home.razor
+        playerWaiting = true;
+        Console.WriteLine("[NewGameWaiting.razor] Waiting for match...");
+    }
+
+    private void GoHome()
+    {
+        UnsubscribeFromEvents();
+        Navigation.NavigateTo("/home");
+    }
+
+    private void HandleWaitingForPlayers(string username)
+    {
+        playerWaiting = true;
+        gameStarted = false;
+        errorMessage = null;
+        InvokeAsync(StateHasChanged); // Update UI
+        Console.WriteLine($"[NewGameWaiting.razor] {username} is waiting in queue.");
+    }
+
+    private void HandleGameStarted(GameStateDto gameState)
+    {
+        Console.WriteLine($"[NewGameWaiting.razor] Game {gameState.GameId} started!");
+        gameStarted = true;
+        playerWaiting = false;
+        gameId = gameState.GameId; // Store GameId
+        errorMessage = null;
+        InvokeAsync(async () =>
+        {
+            StateHasChanged(); // Update UI to show "Match found!"
+            await Task.Delay(2000); // Briefly show "Match found!"
+            // Unsubscribe before navigating to prevent errors on dispose
+            UnsubscribeFromEvents();
+            Navigation.NavigateTo($"/newgame/{gameState.GameId}"); // Navigate to the actual game page
+        });
+    }
+
+    private async Task CancelMatchmaking()
+    {
+        Console.WriteLine("[NewGameWaiting.razor] Cancelling matchmaking...");
+        await GameService.CancelMatchmakingAsync();
+    }
+
+    private void HandleMatchmakingCancelled()
+    {
+        Console.WriteLine("[NewGameWaiting.razor] Matchmaking cancelled by user.");
+        playerWaiting = false;
+        gameStarted = false;
+        errorMessage = null;
+        InvokeAsync(() => {
+            UnsubscribeFromEvents();
+            Navigation.NavigateTo("/home"); // Redirect back to home
+        });
+    }
+
+    private void HandleMatchmakingError(string message)
+    {
+        Console.Error.WriteLine($"[NewGameWaiting.razor] Matchmaking error: {message}");
+        errorMessage = $"Error: {message}";
+        playerWaiting = false;
+        gameStarted = false;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void UnsubscribeFromEvents()
+    {
+        GameService.OnWaitingForPlayers -= HandleWaitingForPlayers;
+        GameService.OnGameStarted -= HandleGameStarted;
+        GameService.OnMatchmakingCancelled -= HandleMatchmakingCancelled;
+        GameService.OnMatchmakingError -= HandleMatchmakingError;
+    }
+
+    public void Dispose()
+    {
+        UnsubscribeFromEvents();
+    }
+}

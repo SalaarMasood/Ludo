@@ -1,0 +1,2026 @@
+
+Player Red's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 0, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: -1, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position 0
+Red: 6, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: -1, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position 6
+Red: 12, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: -1, -1, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 0 at position 12
+Red: 14, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: -1, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 14, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 39, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 0 at position 39
+Red: 14, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 40, -1, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 0 at position 14
+Red: 16, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 40, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 3
+Moving piece 0 at position 40
+Red: 16, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 43, -1, -1, -1
+
+Player Red's turn.
+Rolled: 4
+Moving piece 0 at position 16
+Red: 20, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 43, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 0 at position 43
+Red: 20, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 47, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 0 at position 20
+Red: 21, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 47, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 0 at position 47
+Red: 21, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 1, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 0 at position 1
+Red: 21, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 5, -1, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 0 at position 21
+Red: 26, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 5, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 26, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 26, -1, -1, -1
+Yellow: 5, -1, -1, -1
+
+Player Green's turn.
+Rolled: 3
+Moving piece 0 at position 26
+Red: 26, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 29, -1, -1, -1
+Yellow: 5, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 0 at position 5
+Red: 26, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 29, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 0 at position 26
+Red: 29, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position 29
+Red: 35, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 0 at position 35
+Red: 37, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: -1, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 37, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 26, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 0 at position 26
+Red: 37, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 31, -1, -1, -1
+Yellow: 9, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 0 at position 9
+Red: 37, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 31, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position 37
+Red: 43, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 31, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 0 at position 43
+Red: 49, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 31, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 0 at position 49
+Red: 50, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 31, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position 31
+Red: 50, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 37, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 0 at position 37
+Red: 50, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 42, -1, -1, -1
+Yellow: 13, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 0 at position 13
+Red: 50, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 42, -1, -1, -1
+Yellow: 17, -1, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 0 at position 50
+Red: 55, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 42, -1, -1, -1
+Yellow: 17, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 1
+Moving piece 0 at position 42
+Red: 55, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 43, -1, -1, -1
+Yellow: 17, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 0 at position 17
+Red: 55, -1, -1, -1
+Blue: -1, -1, -1, -1
+Green: 43, -1, -1, -1
+Yellow: 22, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 1 at position -1
+Red: 55, 0, -1, -1
+Blue: -1, -1, -1, -1
+Green: 43, -1, -1, -1
+Yellow: 22, -1, -1, -1
+
+Player Red's turn.
+Rolled: 4
+Moving piece 1 at position 0
+Red: 55, 4, -1, -1
+Blue: -1, -1, -1, -1
+Green: 43, -1, -1, -1
+Yellow: 22, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 3
+Moving piece 0 at position 43
+Red: 55, 4, -1, -1
+Blue: -1, -1, -1, -1
+Green: 46, -1, -1, -1
+Yellow: 22, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 0 at position 22
+Red: 55, 4, -1, -1
+Blue: -1, -1, -1, -1
+Green: 46, -1, -1, -1
+Yellow: 23, -1, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 1 at position 4
+Red: 55, 9, -1, -1
+Blue: -1, -1, -1, -1
+Green: 46, -1, -1, -1
+Yellow: 23, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 4
+Moving piece 0 at position 46
+Red: 55, 9, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 23, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 0 at position 23
+Red: 55, 9, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 29, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+Moving piece 0 at position 29
+Red: 55, 9, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 32, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 1 at position 9
+Red: 55, 15, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 32, -1, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 1 at position 15
+Red: 55, 21, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 32, -1, -1, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 0 at position 55
+Red: 58, 21, -1, -1
+Blue: -1, -1, -1, -1
+Green: 50, -1, -1, -1
+Yellow: 32, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 1
+Moving piece 0 at position 50
+Red: 58, 21, -1, -1
+Blue: -1, -1, -1, -1
+Green: 51, -1, -1, -1
+Yellow: 32, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+Moving piece 0 at position 32
+Red: 58, 21, -1, -1
+Blue: -1, -1, -1, -1
+Green: 51, -1, -1, -1
+Yellow: 35, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 21
+Red: 58, 22, -1, -1
+Blue: -1, -1, -1, -1
+Green: 51, -1, -1, -1
+Yellow: 35, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position 51
+Red: 58, 22, -1, -1
+Blue: -1, -1, -1, -1
+Green: 5, -1, -1, -1
+Yellow: 35, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 0 at position 5
+Red: 58, 22, -1, -1
+Blue: -1, -1, -1, -1
+Green: 10, -1, -1, -1
+Yellow: 35, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 0 at position 35
+Red: 58, 22, -1, -1
+Blue: -1, -1, -1, -1
+Green: 10, -1, -1, -1
+Yellow: 53, -1, -1, -1
+
+Player Red's turn.
+Rolled: 4
+Moving piece 1 at position 22
+Red: 58, 26, -1, -1
+Blue: -1, -1, -1, -1
+Green: 10, -1, -1, -1
+Yellow: 53, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position 10
+Red: 58, 26, -1, -1
+Blue: -1, -1, -1, -1
+Green: 16, -1, -1, -1
+Yellow: 53, -1, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 0 at position 16
+Red: 58, 26, -1, -1
+Blue: -1, -1, -1, -1
+Green: 20, -1, -1, -1
+Yellow: 53, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 0 at position 53
+Red: 58, 26, -1, -1
+Blue: -1, -1, -1, -1
+Green: 20, -1, -1, -1
+Yellow: 54, -1, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 1 at position 26
+Red: 58, 28, -1, -1
+Blue: -1, -1, -1, -1
+Green: 20, -1, -1, -1
+Yellow: 54, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 2
+Moving piece 0 at position 20
+Red: 58, 28, -1, -1
+Blue: -1, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 54, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+Moving piece 0 at position 54
+Red: 58, 28, -1, -1
+Blue: -1, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 28
+Red: 58, 29, -1, -1
+Blue: -1, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 58, 29, -1, -1
+Blue: 13, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position 13
+Red: 58, 29, -1, -1
+Blue: 19, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position 19
+Red: 58, 29, -1, -1
+Blue: 25, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+Moving piece 0 at position 25
+Red: 58, 29, -1, -1
+Blue: 27, -1, -1, -1
+Green: 22, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 6
+Moving piece 0 at position 22
+Red: 58, 29, -1, -1
+Blue: 27, -1, -1, -1
+Green: 54, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 0 at position 54
+Red: 58, 29, -1, -1
+Blue: 27, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 2
+Moving piece 1 at position 29
+Red: 58, 31, -1, -1
+Blue: 27, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 0 at position 27
+Red: 58, 31, -1, -1
+Blue: 32, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 31
+Red: 58, 32, -1, -1
+Blue: -1, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 32
+Red: 58, 33, -1, -1
+Blue: -1, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 33
+Red: 58, 34, -1, -1
+Blue: -1, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 3
+Moving piece 1 at position 34
+Red: 58, 37, -1, -1
+Blue: -1, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 5
+Moving piece 1 at position 37
+Red: 58, 42, -1, -1
+Blue: -1, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position -1
+Red: 58, 42, -1, -1
+Blue: 13, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+Moving piece 0 at position 13
+Red: 58, 42, -1, -1
+Blue: 14, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 3
+Moving piece 1 at position 42
+Red: 58, 45, -1, -1
+Blue: 14, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 0 at position 14
+Red: 58, 45, -1, -1
+Blue: 17, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 6
+Moving piece 1 at position 45
+Red: 58, 51, -1, -1
+Blue: 17, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Red's turn.
+Rolled: 4
+Moving piece 1 at position 51
+Red: 58, 55, -1, -1
+Blue: 17, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position 17
+Red: 58, 55, -1, -1
+Blue: 23, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 0 at position 23
+Red: 58, 55, -1, -1
+Blue: 27, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 55
+Red: 58, 56, -1, -1
+Blue: 27, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 0 at position 27
+Red: 58, 56, -1, -1
+Blue: 32, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 6
+Moving piece 2 at position -1
+Red: 58, 56, 0, -1
+Blue: 32, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 56
+Red: 58, 57, 0, -1
+Blue: 32, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+Moving piece 0 at position 32
+Red: 58, 57, 0, -1
+Blue: 34, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 57, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 0 at position 57
+Red: 58, 57, 0, -1
+Blue: 34, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 2 at position 0
+Red: 58, 57, 5, -1
+Blue: 34, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 0 at position 34
+Red: 58, 57, 5, -1
+Blue: 37, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 1 at position 57
+Red: 58, 58, 5, -1
+Blue: 37, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 0 at position 37
+Red: 58, 58, 5, -1
+Blue: 40, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 3
+Moving piece 2 at position 5
+Red: 58, 58, 8, -1
+Blue: 40, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 0 at position 40
+Red: 58, 58, 8, -1
+Blue: 44, -1, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 6
+Moving piece 1 at position -1
+Red: 58, 58, 8, -1
+Blue: 44, -1, -1, -1
+Green: 58, 26, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 26
+Red: 58, 58, 8, -1
+Blue: 44, -1, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 5
+Moving piece 2 at position 8
+Red: 58, 58, 13, -1
+Blue: 44, -1, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 0 at position 44
+Red: 58, 58, 13, -1
+Blue: 49, -1, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 1 at position 27
+Red: 58, 58, 13, -1
+Blue: 49, -1, -1, -1
+Green: 58, 31, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 2
+Moving piece 2 at position 13
+Red: 58, 58, 15, -1
+Blue: 49, -1, -1, -1
+Green: 58, 31, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 0 at position 49
+Red: 58, 58, 15, -1
+Blue: 1, -1, -1, -1
+Green: 58, 31, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 31
+Red: 58, 58, 15, -1
+Blue: 1, -1, -1, -1
+Green: 58, 33, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 3
+Moving piece 2 at position 15
+Red: 58, 58, 18, -1
+Blue: 1, -1, -1, -1
+Green: 58, 33, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 0 at position 1
+Red: 58, 58, 18, -1
+Blue: 6, -1, -1, -1
+Green: 58, 33, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 3
+Moving piece 1 at position 33
+Red: 58, 58, 18, -1
+Blue: 6, -1, -1, -1
+Green: 58, 36, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 2 at position 18
+Red: 58, 58, 19, -1
+Blue: 6, -1, -1, -1
+Green: 58, 36, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 0 at position 6
+Red: 58, 58, 19, -1
+Blue: 12, -1, -1, -1
+Green: 58, 36, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+Moving piece 0 at position 12
+Red: 58, 58, 19, -1
+Blue: 53, -1, -1, -1
+Green: 58, 36, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 36
+Red: 58, 58, 19, -1
+Blue: 53, -1, -1, -1
+Green: 58, 41, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 2 at position 19
+Red: 58, 58, 20, -1
+Blue: 53, -1, -1, -1
+Green: 58, 41, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 0 at position 53
+Red: 58, 58, 20, -1
+Blue: 56, -1, -1, -1
+Green: 58, 41, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 41
+Red: 58, 58, 20, -1
+Blue: 56, -1, -1, -1
+Green: 58, 42, -1, -1
+Yellow: 58, -1, -1, -1
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 1 at position -1
+Red: 58, 58, 20, -1
+Blue: 56, -1, -1, -1
+Green: 58, 42, -1, -1
+Yellow: 58, 39, -1, -1
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 1 at position 39
+Red: 58, 58, 20, -1
+Blue: 56, -1, -1, -1
+Green: 58, 42, -1, -1
+Yellow: 58, 45, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 1 at position 45
+Red: 58, 58, 20, -1
+Blue: 56, -1, -1, -1
+Green: 58, 42, -1, -1
+Yellow: 58, 50, -1, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 2 at position 20
+Red: 58, 58, 23, -1
+Blue: 56, -1, -1, -1
+Green: 58, 42, -1, -1
+Yellow: 58, 50, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 1 at position 42
+Red: 58, 58, 23, -1
+Blue: 56, -1, -1, -1
+Green: 58, 48, -1, -1
+Yellow: 58, 50, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 48
+Red: 58, 58, 23, -1
+Blue: 56, -1, -1, -1
+Green: 58, 49, -1, -1
+Yellow: 58, 50, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 50
+Red: 58, 58, 23, -1
+Blue: 56, -1, -1, -1
+Green: 58, 49, -1, -1
+Yellow: 58, 51, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 2 at position 23
+Red: 58, 58, 28, -1
+Blue: 56, -1, -1, -1
+Green: 58, 49, -1, -1
+Yellow: 58, 51, -1, -1
+
+Player Blue's turn.
+Rolled: 2
+Moving piece 0 at position 56
+Red: 58, 58, 28, -1
+Blue: 58, -1, -1, -1
+Green: 58, 49, -1, -1
+Yellow: 58, 51, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 1 at position 49
+Red: 58, 58, 28, -1
+Blue: 58, -1, -1, -1
+Green: 58, 1, -1, -1
+Yellow: 58, 51, -1, -1
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 1 at position 51
+Red: 58, 58, 28, -1
+Blue: 58, -1, -1, -1
+Green: 58, 1, -1, -1
+Yellow: 58, 5, -1, -1
+
+Player Yellow's turn.
+Rolled: 2
+Moving piece 1 at position 5
+Red: 58, 58, 28, -1
+Blue: 58, -1, -1, -1
+Green: 58, 1, -1, -1
+Yellow: 58, 7, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 2 at position 28
+Red: 58, 58, 29, -1
+Blue: 58, -1, -1, -1
+Green: 58, 1, -1, -1
+Yellow: 58, 7, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 1
+Red: 58, 58, 29, -1
+Blue: 58, -1, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 7, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 7
+Red: 58, 58, 29, -1
+Blue: 58, -1, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 8, -1, -1
+
+Player Red's turn.
+Rolled: 4
+Moving piece 2 at position 29
+Red: 58, 58, 33, -1
+Blue: 58, -1, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 8, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 1 at position -1
+Red: 58, 58, 33, -1
+Blue: 58, 13, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 8, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 1 at position 13
+Red: 58, 58, 33, -1
+Blue: 58, 17, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 8, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 3
+Red: 58, 58, 33, -1
+Blue: 58, 17, -1, -1
+Green: 58, 8, -1, -1
+Yellow: 58, 8, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 1 at position 8
+Red: 58, 58, 33, -1
+Blue: 58, 17, -1, -1
+Green: 58, 8, -1, -1
+Yellow: 58, 13, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 2 at position 33
+Red: 58, 58, 38, -1
+Blue: 58, 17, -1, -1
+Green: 58, 8, -1, -1
+Yellow: 58, 13, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 1 at position 17
+Red: 58, 58, 38, -1
+Blue: 58, 20, -1, -1
+Green: 58, 8, -1, -1
+Yellow: 58, 13, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 8
+Red: 58, 58, 38, -1
+Blue: 58, 20, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 13, -1, -1
+
+Player Yellow's turn.
+Rolled: 2
+Moving piece 1 at position 13
+Red: 58, 58, 38, -1
+Blue: 58, 20, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 15, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 2 at position 38
+Red: 58, 58, 39, -1
+Blue: 58, 20, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 15, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 1 at position 20
+Red: 58, 58, 39, -1
+Blue: 58, 25, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 15, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 9
+Red: 58, 58, 39, -1
+Blue: 58, 25, -1, -1
+Green: 58, 10, -1, -1
+Yellow: 58, 15, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 15
+Red: 58, 58, 39, -1
+Blue: 58, 25, -1, -1
+Green: 58, 10, -1, -1
+Yellow: 58, 16, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 2 at position 39
+Red: 58, 58, 41, -1
+Blue: 58, 25, -1, -1
+Green: 58, 10, -1, -1
+Yellow: 58, 16, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 1 at position 25
+Red: 58, 58, 41, -1
+Blue: 58, 30, -1, -1
+Green: 58, 10, -1, -1
+Yellow: 58, 16, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 10
+Red: 58, 58, 41, -1
+Blue: 58, 30, -1, -1
+Green: 58, 15, -1, -1
+Yellow: 58, 16, -1, -1
+
+Player Yellow's turn.
+Rolled: 2
+Moving piece 1 at position 16
+Red: 58, 58, 41, -1
+Blue: 58, 30, -1, -1
+Green: 58, 15, -1, -1
+Yellow: 58, 18, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 2 at position 41
+Red: 58, 58, 43, -1
+Blue: 58, 30, -1, -1
+Green: 58, 15, -1, -1
+Yellow: 58, 18, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 1 at position 30
+Red: 58, 58, 43, -1
+Blue: 58, 33, -1, -1
+Green: 58, 15, -1, -1
+Yellow: 58, 18, -1, -1
+
+Player Green's turn.
+Rolled: 6
+Moving piece 1 at position 15
+Red: 58, 58, 43, -1
+Blue: 58, 33, -1, -1
+Green: 58, 21, -1, -1
+Yellow: 58, 18, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 21
+Red: 58, 58, 43, -1
+Blue: 58, 33, -1, -1
+Green: 58, 22, -1, -1
+Yellow: 58, 18, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+Moving piece 1 at position 18
+Red: 58, 58, 43, -1
+Blue: 58, 33, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 22, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 22
+Red: 58, 58, 43, -1
+Blue: 58, 33, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 23, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 2 at position 43
+Red: 58, 58, 48, -1
+Blue: 58, 33, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 23, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 1 at position 33
+Red: 58, 58, 48, -1
+Blue: 58, 37, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 23, -1, -1
+
+Player Green's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 23
+Red: 58, 58, 48, -1
+Blue: 58, 37, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 2 at position 48
+Red: 58, 58, 54, -1
+Blue: 58, 37, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 2 at position 54
+Red: 58, 58, 55, -1
+Blue: 58, 37, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 1 at position 37
+Red: 58, 58, 55, -1
+Blue: 58, 43, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 1 at position 43
+Red: 58, 58, 55, -1
+Blue: 58, 49, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 1 at position 49
+Red: 58, 58, 55, -1
+Blue: 58, 0, -1, -1
+Green: 58, -1, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Green's turn.
+Rolled: 6
+Moving piece 1 at position -1
+Red: 58, 58, 55, -1
+Blue: 58, 0, -1, -1
+Green: 58, 26, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 26
+Red: 58, 58, 55, -1
+Blue: 58, 0, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 24, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 1 at position 24
+Red: 58, 58, 55, -1
+Blue: 58, 0, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 3 at position -1
+Red: 58, 58, 55, 0
+Blue: 58, 0, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 2 at position 55
+Red: 58, 58, 58, 0
+Blue: 58, 0, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 1 at position 0
+Red: 58, 58, 58, 0
+Blue: 58, 6, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 1 at position 6
+Red: 58, 58, 58, 0
+Blue: 58, 12, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 1 at position 12
+Red: 58, 58, 58, 0
+Blue: 58, 56, -1, -1
+Green: 58, 27, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 27
+Red: 58, 58, 58, 0
+Blue: 58, 56, -1, -1
+Green: 58, 32, -1, -1
+Yellow: 58, 29, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 29
+Red: 58, 58, 58, 0
+Blue: 58, 56, -1, -1
+Green: 58, 32, -1, -1
+Yellow: 58, 30, -1, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 3 at position 0
+Red: 58, 58, 58, 3
+Blue: 58, 56, -1, -1
+Green: 58, 32, -1, -1
+Yellow: 58, 30, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 6
+Moving piece 1 at position 32
+Red: 58, 58, 58, 3
+Blue: 58, 56, -1, -1
+Green: 58, 38, -1, -1
+Yellow: 58, 30, -1, -1
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 38
+Red: 58, 58, 58, 3
+Blue: 58, 56, -1, -1
+Green: 58, 40, -1, -1
+Yellow: 58, 30, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 1 at position 30
+Red: 58, 58, 58, 3
+Blue: 58, 56, -1, -1
+Green: 58, 40, -1, -1
+Yellow: 58, 35, -1, -1
+
+Player Red's turn.
+Rolled: 2
+Moving piece 3 at position 3
+Red: 58, 58, 58, 5
+Blue: 58, 56, -1, -1
+Green: 58, 40, -1, -1
+Yellow: 58, 35, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+Moving piece 1 at position 56
+Red: 58, 58, 58, 5
+Blue: 58, 57, -1, -1
+Green: 58, 40, -1, -1
+Yellow: 58, 35, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 1 at position 40
+Red: 58, 58, 58, 5
+Blue: 58, 57, -1, -1
+Green: 58, 44, -1, -1
+Yellow: 58, 35, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+Moving piece 1 at position 35
+Red: 58, 58, 58, 5
+Blue: 58, 57, -1, -1
+Green: 58, 44, -1, -1
+Yellow: 58, 38, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 3 at position 5
+Red: 58, 58, 58, 11
+Blue: 58, 57, -1, -1
+Green: 58, 44, -1, -1
+Yellow: 58, 38, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 3 at position 11
+Red: 58, 58, 58, 17
+Blue: 58, 57, -1, -1
+Green: 58, 44, -1, -1
+Yellow: 58, 38, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 3 at position 17
+Red: 58, 58, 58, 22
+Blue: 58, 57, -1, -1
+Green: 58, 44, -1, -1
+Yellow: 58, 38, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 44
+Red: 58, 58, 58, 22
+Blue: 58, 57, -1, -1
+Green: 58, 45, -1, -1
+Yellow: 58, 38, -1, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 1 at position 38
+Red: 58, 58, 58, 22
+Blue: 58, 57, -1, -1
+Green: 58, 45, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 3 at position 22
+Red: 58, 58, 58, 27
+Blue: 58, 57, -1, -1
+Green: 58, 45, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+Moving piece 1 at position 57
+Red: 58, 58, 58, 27
+Blue: 58, 58, -1, -1
+Green: 58, 45, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 45
+Red: 58, 58, 58, 27
+Blue: 58, 58, -1, -1
+Green: 58, 50, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 5
+Moving piece 3 at position 27
+Red: 58, 58, 58, 32
+Blue: 58, 58, -1, -1
+Green: 58, 50, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 50
+Red: 58, 58, 58, 32
+Blue: 58, 58, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 56, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 56
+Red: 58, 58, 58, 32
+Blue: 58, 58, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 3 at position 32
+Red: 58, 58, 58, 37
+Blue: 58, 58, -1, -1
+Green: 58, 3, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Blue's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 4
+Moving piece 1 at position 3
+Red: 58, 58, 58, 37
+Blue: 58, 58, -1, -1
+Green: 58, 7, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 4
+Moving piece 3 at position 37
+Red: 58, 58, 58, 41
+Blue: 58, 58, -1, -1
+Green: 58, 7, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 7
+Red: 58, 58, 58, 41
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Yellow's turn.
+Rolled: 6
+Moving piece 2 at position -1
+Red: 58, 58, 58, 41
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, 39, -1
+
+Player Yellow's turn.
+Rolled: 5
+Moving piece 2 at position 39
+Red: 58, 58, 58, 41
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, 44, -1
+
+Player Red's turn.
+Rolled: 3
+Moving piece 3 at position 41
+Red: 58, 58, 58, 44
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Red's turn.
+Rolled: 6
+Moving piece 3 at position 44
+Red: 58, 58, 58, 50
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Red's turn.
+Rolled: 5
+Moving piece 3 at position 50
+Red: 58, 58, 58, 55
+Blue: 58, 58, -1, -1
+Green: 58, 9, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Blue's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 9
+Red: 58, 58, 58, 55
+Blue: 58, 58, -1, -1
+Green: 58, 11, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 6
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 2 at position -1
+Red: 58, 58, 58, 55
+Blue: 58, 58, 13, -1
+Green: 58, 11, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 2 at position 13
+Red: 58, 58, 58, 55
+Blue: 58, 58, 17, -1
+Green: 58, 11, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 11
+Red: 58, 58, 58, 55
+Blue: 58, 58, 17, -1
+Green: 58, 13, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 2 at position 17
+Red: 58, 58, 58, 55
+Blue: 58, 58, 22, -1
+Green: 58, 13, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Green's turn.
+Rolled: 3
+Moving piece 1 at position 13
+Red: 58, 58, 58, 55
+Blue: 58, 58, 22, -1
+Green: 58, 16, -1, -1
+Yellow: 58, 57, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+Moving piece 1 at position 57
+Red: 58, 58, 58, 55
+Blue: 58, 58, 22, -1
+Green: 58, 16, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Red's turn.
+Rolled: 1
+Moving piece 3 at position 55
+Red: 58, 58, 58, 56
+Blue: 58, 58, 22, -1
+Green: 58, 16, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Blue's turn.
+Rolled: 6
+Moving piece 2 at position 22
+Red: 58, 58, 58, 56
+Blue: 58, 58, 28, -1
+Green: 58, 16, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 2 at position 28
+Red: 58, 58, 58, 56
+Blue: 58, 58, 31, -1
+Green: 58, 16, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 1
+Moving piece 1 at position 16
+Red: 58, 58, 58, 56
+Blue: 58, 58, 31, -1
+Green: 58, 17, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 2 at position 31
+Red: 58, 58, 58, 56
+Blue: 58, 58, 35, -1
+Green: 58, 17, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 5
+Moving piece 1 at position 17
+Red: 58, 58, 58, 56
+Blue: 58, 58, 35, -1
+Green: 58, 22, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Yellow's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 2 at position 35
+Red: 58, 58, 58, 56
+Blue: 58, 58, 38, -1
+Green: 58, 22, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 3
+Moving piece 1 at position 22
+Red: 58, 58, 58, 56
+Blue: 58, 58, 38, -1
+Green: 58, 25, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Yellow's turn.
+Rolled: 1
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 3 at position 56
+Red: 58, 58, 58, 57
+Blue: 58, 58, 38, -1
+Green: 58, 25, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Blue's turn.
+Rolled: 3
+Moving piece 2 at position 38
+Red: 58, 58, 58, 57
+Blue: 58, 58, 41, -1
+Green: 58, 25, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 4
+Moving piece 1 at position 25
+Red: 58, 58, 58, 57
+Blue: 58, 58, 41, -1
+Green: 58, 55, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Yellow's turn.
+Rolled: 3
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 2
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 5
+Moving piece 2 at position 41
+Red: 58, 58, 58, 57
+Blue: 58, 58, 46, -1
+Green: 58, 55, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 2
+Moving piece 1 at position 55
+Red: 58, 58, 58, 57
+Blue: 58, 58, 46, -1
+Green: 58, 57, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Yellow's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Blue's turn.
+Rolled: 4
+Moving piece 2 at position 46
+Red: 58, 58, 58, 57
+Blue: 58, 58, 50, -1
+Green: 58, 57, -1, -1
+Yellow: 58, 58, -1, -1
+
+Player Green's turn.
+Rolled: 4
+No moves, skipping turn...
+
+Player Yellow's turn.
+Rolled: 5
+No moves, skipping turn...
+
+Player Red's turn.
+Rolled: 1
+Moving piece 3 at position 57
+Red: 58, 58, 58, 58
+Blue: 58, 58, 50, -1
+Green: 58, 57, -1, -1
+Yellow: 58, 58, -1, -1
+
+Game Over! Winner: Red

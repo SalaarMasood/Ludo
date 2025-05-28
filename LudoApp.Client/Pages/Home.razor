@@ -1,0 +1,55 @@
+@page "/home"
+@inject NavigationManager Navigation
+@inject LudoApp.Client.Services.AuthService AuthService
+@inject LudoApp.Client.Services.GameClientService GameService 
+
+<div class="text-center mt-5"> @* Added text-center and mt-5 for spacing *@
+    <h3>Welcome to Ludo!</h3>
+
+    @if (AuthService.IsLoggedIn)
+    {
+        <p class="lead">Hello, <span class="fw-bold text-primary">@AuthService.Username</span>! You are logged in.</p>
+    }
+    else
+    {
+        <p class="lead">Please log in to play.</p>
+    }
+
+    @* Replaced the button container with a new structure for single button *@
+    <div class="d-grid gap-2 col-lg-4 col-md-6 mx-auto mt-4"> @* Adjusted columns for better centering on various screens *@
+        <button class="btn btn-primary btn-lg" @onclick="PlayGame">Play</button> @* Renamed method to PlayGame for clarity *@
+    </div>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        AuthService.AuthStateChanged += AuthStateChangedHandler;
+    }
+
+    private void AuthStateChangedHandler()
+    {
+        StateHasChanged();
+    }
+
+    // Renamed from GoHome to PlayGame for better clarity of intent
+    private async Task PlayGame() // Changed to async as it calls an async method
+    {
+        if (AuthService.IsLoggedIn) // Only allow if logged in
+        {
+            Console.WriteLine("[Home.razor] Initiating matchmaking...");
+            await GameService.FindMatchAsync();
+            Navigation.NavigateTo("/newgame/waiting"); // Redirect to waiting room immediately
+        }
+        else
+        {
+            Console.WriteLine("[Home.razor] Not logged in, cannot play.");
+            Navigation.NavigateTo("/login"); // Optional: Redirect to login if somehow not logged in
+        }
+    }
+
+    public void Dispose()
+    {
+        AuthService.AuthStateChanged -= AuthStateChangedHandler;
+    }
+}
