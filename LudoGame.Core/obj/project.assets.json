@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoGame.Core\\LudoGame.Core.csproj",
+      "projectUniqueName": "D:\\LUMS\\summer2025\\Ludo\\LudoGame.Core\\LudoGame.Core.csproj",
       "projectName": "LudoGame.Core",
-      "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoGame.Core\\LudoGame.Core.csproj",
+      "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoGame.Core\\LudoGame.Core.csproj",
       "packagesPath": "C:\\Users\\Salaar Masood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoGame.Core\\obj\\",
+      "outputPath": "D:\\LUMS\\summer2025\\Ludo\\LudoGame.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Salaar Masood\\AppData\\Roaming\\NuGet\\NuGet.Config"

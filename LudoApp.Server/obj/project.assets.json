@@ -2902,11 +2902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Server\\LudoApp.Server.csproj",
+      "projectUniqueName": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Server\\LudoApp.Server.csproj",
       "projectName": "LudoApp.Server",
-      "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Server\\LudoApp.Server.csproj",
+      "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Server\\LudoApp.Server.csproj",
       "packagesPath": "C:\\Users\\Salaar Masood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Server\\obj\\",
+      "outputPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Salaar Masood\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2921,14 +2921,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\LudoApp.Client.csproj": {
-              "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\LudoApp.Client.csproj"
+            "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\LudoApp.Client.csproj": {
+              "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\LudoApp.Client.csproj"
             },
-            "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Shared\\LudoApp.Shared.csproj": {
-              "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Shared\\LudoApp.Shared.csproj"
+            "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Shared\\LudoApp.Shared.csproj": {
+              "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Shared\\LudoApp.Shared.csproj"
             },
-            "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoGame.Core\\LudoGame.Core.csproj": {
-              "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoGame.Core\\LudoGame.Core.csproj"
+            "D:\\LUMS\\summer2025\\Ludo\\LudoGame.Core\\LudoGame.Core.csproj": {
+              "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoGame.Core\\LudoGame.Core.csproj"
             }
           }
         }

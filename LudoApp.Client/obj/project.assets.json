@@ -2962,11 +2962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\LudoApp.Client.csproj",
+      "projectUniqueName": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\LudoApp.Client.csproj",
       "projectName": "LudoApp.Client",
-      "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\LudoApp.Client.csproj",
+      "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\LudoApp.Client.csproj",
       "packagesPath": "C:\\Users\\Salaar Masood\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\obj\\",
+      "outputPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Salaar Masood\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2981,8 +2981,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Shared\\LudoApp.Shared.csproj": {
-              "projectPath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Shared\\LudoApp.Shared.csproj"
+            "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Shared\\LudoApp.Shared.csproj": {
+              "projectPath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Shared\\LudoApp.Shared.csproj"
             }
           }
         }

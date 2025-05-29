@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TY+v0T8Sy8o=",
+  "dgSpecHash": "NuMkzgS9ZnQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\LudoApp.Client.csproj",
+  "projectFilePath": "D:\\LUMS\\summer2025\\Ludo\\LudoApp.Client\\LudoApp.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Salaar Masood\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.16\\microsoft.aspnetcore.authorization.8.0.16.nupkg.sha512",
     "C:\\Users\\Salaar Masood\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.16\\microsoft.aspnetcore.components.8.0.16.nupkg.sha512",
