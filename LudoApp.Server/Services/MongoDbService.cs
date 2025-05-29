@@ -34,5 +34,23 @@ namespace LudoApp.Server.Services
         {
             await _usersCollection.InsertOneAsync(newUser);
         }
+
+        // Method to increment the wins of a user
+        public async Task IncrementUserWinsAsync(string username)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.Username, username);
+            var update = Builders<User>.Update.Inc(u => u.Wins, 1);
+            
+            var result = await _usersCollection.UpdateOneAsync(filter, update);
+            
+            if (result.ModifiedCount > 0)
+            {
+                Console.WriteLine($"[MongoDbService] Incremented wins for user: {username}");
+            }
+            else
+            {
+                Console.WriteLine($"[MongoDbService] Failed to increment wins for user: {username}");
+            }
+        }
     }
 }

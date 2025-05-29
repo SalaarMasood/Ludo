@@ -2,50 +2,139 @@
 @inject NavigationManager Navigation
 @inject LudoApp.Client.Services.AuthService AuthService
 @inject LudoApp.Client.Services.GameClientService GameService 
+@inject HttpClient Http  
 
-<div class="text-center mt-5"> @* Added text-center and mt-5 for spacing *@
+<div class="text-center mt-5">
     <h3>Welcome to Ludo!</h3>
 
     @if (AuthService.IsLoggedIn)
     {
-        <p class="lead">Hello, <span class="fw-bold text-primary">@AuthService.Username</span>! You are logged in.</p>
+        <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Hello, <span class="text-primary">@AuthService.Username</span>!</h5>
+                <p class="card-text">You are logged in and ready to play.</p>
+                
+                @if (userWins.HasValue)
+                {
+                    <div class="alert alert-success">
+                        🏆 <strong>Total Wins: @userWins.Value</strong>
+                    </div>
+                }
+                else if (isLoadingWins)
+                {
+                    <div class="spinner-border spinner-border-sm text-primary" role="status">
+                        <span class="visually-hidden">Loading wins...</span>
+                    </div>
+                    <small class="text-muted ms-2">Loading your stats...</small>
+                }
+                
+                <button class="btn btn-primary btn-lg mt-3" @onclick="PlayGame">
+                    🎲 Play Ludo
+                </button>
+            </div>
+        </div>
     }
     else
     {
         <p class="lead">Please log in to play.</p>
+        <button class="btn btn-outline-primary" @onclick="GoToLogin">Login</button>
     }
-
-    @* Replaced the button container with a new structure for single button *@
-    <div class="d-grid gap-2 col-lg-4 col-md-6 mx-auto mt-4"> @* Adjusted columns for better centering on various screens *@
-        <button class="btn btn-primary btn-lg" @onclick="PlayGame">Play</button> @* Renamed method to PlayGame for clarity *@
-    </div>
 </div>
 
 @code {
-    protected override void OnInitialized()
+    private int? userWins = null;
+    private bool isLoadingWins = false;
+
+    protected override async Task OnInitializedAsync()
     {
         AuthService.AuthStateChanged += AuthStateChangedHandler;
-    }
-
-    private void AuthStateChangedHandler()
-    {
-        StateHasChanged();
-    }
-
-    // Renamed from GoHome to PlayGame for better clarity of intent
-    private async Task PlayGame() // Changed to async as it calls an async method
-    {
-        if (AuthService.IsLoggedIn) // Only allow if logged in
+        
+        // Load wins when page loads if user is logged in
+        if (AuthService.IsLoggedIn)
         {
-            Console.WriteLine("[Home.razor] Initiating matchmaking...");
-            await GameService.FindMatchAsync();
-            Navigation.NavigateTo("/newgame/waiting"); // Redirect to waiting room immediately
+            await LoadUserWins();
+        }
+    }
+
+    private async Task LoadUserWins()
+    {
+        if (!AuthService.IsLoggedIn) return;
+        
+        try
+        {
+            isLoadingWins = true;
+            StateHasChanged();
+            
+            Console.WriteLine($"[Home.razor] Loading wins for user: {AuthService.Username}");
+            var response = await Http.GetAsync($"api/user/{AuthService.Username}/wins");
+            
+            Console.WriteLine($"[Home.razor] Response status: {response.StatusCode}");
+            
+            if (response.IsSuccessStatusCode)
+            {
+                var winsText = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"[Home.razor] Wins response: {winsText}");
+                
+                // Remove any quotes and parse
+                var cleanWinsText = winsText.Trim('"');
+                if (int.TryParse(cleanWinsText, out int wins))
+                {
+                    userWins = wins;
+                    Console.WriteLine($"[Home.razor] Parsed wins: {wins}");
+                    StateHasChanged(); // ⚠️ Add this to force UI update
+                }
+                else
+                {
+                    Console.Error.WriteLine($"[Home.razor] Failed to parse wins: '{winsText}'");
+                }
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                Console.Error.WriteLine($"[Home.razor] Failed to load wins. Status: {response.StatusCode}, Content: {errorContent}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"[Home.razor] Error loading user wins: {ex.Message}");
+        }
+        finally
+        {
+            isLoadingWins = false;
+            StateHasChanged(); // This should show the wins
+        }
+    }
+
+    private async void AuthStateChangedHandler()
+    {
+        if (AuthService.IsLoggedIn)
+        {
+            await LoadUserWins();
         }
         else
         {
-            Console.WriteLine("[Home.razor] Not logged in, cannot play.");
-            Navigation.NavigateTo("/login"); // Optional: Redirect to login if somehow not logged in
+            userWins = null;
         }
+        StateHasChanged();
+    }
+
+    private async Task PlayGame()
+    {
+        if (AuthService.IsLoggedIn)
+        {
+            Console.WriteLine("[Home.razor] Initiating matchmaking...");
+            await GameService.FindMatchAsync();
+            Navigation.NavigateTo("/newgame/waiting");
+        }
+        else
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private void GoToLogin()
+    {
+        Navigation.NavigateTo("/login");
     }
 
     public void Dispose()

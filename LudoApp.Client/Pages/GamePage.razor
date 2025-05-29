@@ -5,6 +5,141 @@
 @using LudoApp.Shared
 @using LudoGame.Core 
 
+<style>
+    .ludo-board-container {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin: 20px auto;
+        border: 3px solid #333;
+        background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    }
+    
+    .board-square {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    /* Color-specific safe spots */
+    .safe-spot-red { 
+        background-color: #ffcdd2 !important; 
+        border: 2px solid #f44336 !important;
+    }
+    .safe-spot-blue { 
+        background-color: #bbdefb !important; 
+        border: 2px solid #2196f3 !important;
+    }
+    .safe-spot-green { 
+        background-color: #c8e6c9 !important; 
+        border: 2px solid #4caf50 !important;
+    }
+    .safe-spot-yellow { 
+        background-color: #fff9c4 !important; 
+        border: 2px solid #ffeb3b !important;
+    }
+    /* General safe spots (non-starting) */
+    .safe-spot-general { 
+        background-color: #f5f5f5 !important; 
+        border: 2px solid #999 !important;
+    }
+    
+    .red-path { background-color: #ffcdd2; }
+    .blue-path { background-color: #bbdefb; }
+    .green-path { background-color: #c8e6c9; }
+    .yellow-path { background-color: #fff9c4; }
+    
+    .player-base {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border: 3px solid;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .red-base { 
+        background-color: #ffcdd2; 
+        border-color: #f44336; 
+        top: 30px; 
+        left: 30px; 
+    }
+    .blue-base { 
+        background-color: #bbdefb; 
+        border-color: #2196f3; 
+        top: 30px; 
+        right: 30px; 
+    }
+    .green-base { 
+        background-color: #c8e6c9; 
+        border-color: #4caf50; 
+        bottom: 30px; 
+        right: 30px; 
+    }
+    .yellow-base { 
+        background-color: #fff9c4; 
+        border-color: #ffeb3b; 
+        bottom: 30px; 
+        left: 30px; 
+    }
+    
+    .game-piece {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+    
+    .piece-Red { background-color: #f44336; }
+    .piece-Blue { background-color: #2196f3; }
+    .piece-Green { background-color: #4caf50; }
+    .piece-Yellow { background-color: #ffeb3b; color: #333 !important; }
+    
+    .piece-clickable:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .center-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(45deg, #f44336, #2196f3, #4caf50, #ffeb3b);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+</style>
+
 <h3>Ludo Game: @GameId</h3>
 
 @if (gameState == null)
@@ -15,71 +150,114 @@
 else
 {
     <div class="game-container text-center">
-        <h4>Players:</h4>
-        <ul>
-            <!-- MODIFIED: Loop directly over gameState.Players (which are now PlayerDto) -->
-            @foreach (var player in gameState.Players)
-            {
-                <li style="color: @player.Color;">@player.Username (@player.Color) - @(player.ConnectionId == myConnectionId ? "(You)" : "")</li>
-
-                <div class="player-pieces-display">
-                    <p class="mb-1">
-                        Pieces:
-                        <!-- MODIFIED: Loop directly over player.Pieces (which are now PieceDto) -->
-                        @foreach (var piece in player.Pieces)
-                        {
-                            <span @key="piece.Id"
-                                  class="badge @(piece.IsAtHome ? "bg-success" : "bg-primary") me-1" 
-                                  style="cursor: pointer;">
-                                @($"P{piece.Id} (Pos: {piece.Position})")
-                            </span>
-                        }
-                    </p>
+        <!-- Game Info -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <h5>Current Player: @(gameState.Players.FirstOrDefault(p => p.Id == gameState.CurrentPlayerId)?.Username)</h5>
+                <h5>Phase: @gameState.Phase</h5>
+                <h5>Dice Roll: @gameState.DiceRoll</h5>
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-info">
+                    @gameState.Message
                 </div>
-            }
-        </ul>
-
-        <h4 class="mt-4">Current Phase: @gameState.Phase</h4>
-        <h4>Current Player: @(gameState.Players.FirstOrDefault(p => p.Id == gameState.CurrentPlayerId)?.Username)</h4>
-        <h4>Dice Roll: @gameState.DiceRoll</h4>
-
-        <div class="alert alert-info mt-3">
-            @gameState.Message
+            </div>
         </div>
 
-        @if (gameState.Phase == GamePhase.RollingDice && IsMyTurn())
-        {
-            <button class="btn btn-warning btn-lg mt-3" @onclick="RollDice">Roll Dice</button>
-        }
-        else if (gameState.Phase == GamePhase.MovingPiece && IsMyTurn())
-        {
-            <p class="h5 mt-3">Click a piece to move! (Dice Roll: @gameState.DiceRoll)</p>
-            @foreach(var player in gameState.Players.Where(p => p.ConnectionId == myConnectionId)) {
-                @foreach(var piece in player.Pieces) { 
-                    <!-- When dice roll is 6, show ALL pieces including those at home -->
-                    @if (!piece.IsAtHome || gameState.DiceRoll == 6)
+        <!-- Ludo Board -->
+        <div class="ludo-board-container">
+            <!-- Player Bases -->
+            <div class="player-base red-base">
+                <span style="position: absolute; top: -25px; left: 0; font-weight: bold;">RED</span>
+            </div>
+            <div class="player-base blue-base">
+                <span style="position: absolute; top: -25px; right: 0; font-weight: bold;">BLUE</span>
+            </div>
+            <div class="player-base green-base">
+                <span style="position: absolute; bottom: -25px; right: 0; font-weight: bold;">GREEN</span>
+            </div>
+            <div class="player-base yellow-base">
+                <span style="position: absolute; bottom: -25px; left: 0; font-weight: bold;">YELLOW</span>
+            </div>
+
+            <!-- Board Squares (simplified main path) -->
+            @for (int i = 0; i < 52; i++)
+            {
+                var (top, left) = GetBoardSquarePosition(i);
+                var safeSpotClass = GetSafeSpotClass(i);
+                <div class="board-square @safeSpotClass" 
+                     style="top: @(top)px; left: @(left)px;">
+                    @i
+                </div>
+            }
+
+            <!-- Center Home Area -->
+            <div class="center-area">
+                HOME
+            </div>
+
+            <!-- Game Pieces -->
+            @if (gameState.Players != null)
+            {
+                @foreach (var player in gameState.Players)
+                {
+                    @foreach (var piece in player.Pieces)
                     {
-                        <button @key="piece.Id" class="btn btn-outline-@(player.Color.ToLower()) btn-sm m-1"
-                                @onclick="() => MakeMove(piece.Id)">
-                            @($"P{piece.Id} (Pos: {piece.Position})")
-                            @(piece.IsAtHome ? " (Move out of home)" : "")
-                        </button>
+                        var (pieceTop, pieceLeft) = GetPiecePosition(player.Color, piece.Position, piece.Id);
+                        var canClick = CanClickPiece(player, piece);
+                        
+                        <div class="game-piece piece-@player.Color @(canClick ? "piece-clickable" : "")"
+                             style="top: @(pieceTop)px; left: @(pieceLeft)px;"
+                             @onclick="() => { if (canClick) MakeMove(piece.Id); }"
+                             title="@player.Username - Piece @piece.Id (Pos: @piece.Position)">
+                            @piece.Id
+                        </div>
                     }
                 }
             }
-        }
-        else if (gameState.Phase == GamePhase.GameOver)
-        {
-            <h4 class="mt-4">Game Over! Winner: <span style="color: @gameState.WinnerColor;">@gameState.WinnerColor</span></h4>
-            <button class="btn btn-success mt-3" @onclick="PlayAgain">Play Again</button>
-        }
-        else
-        {
-            <p class="mt-3">Waiting for opponent...</p>
-        }
+        </div>
 
-        <div class="mt-5">
-            <button class="btn btn-danger" @onclick="ForfeitGame">Forfeit Game</button>
+        <!-- Game Controls -->
+        <div class="mt-4">
+            @if (gameState.Phase == GamePhase.RollingDice && IsMyTurn())
+            {
+                <button class="btn btn-warning btn-lg" @onclick="RollDice">🎲 Roll Dice</button>
+            }
+            else if (gameState.Phase == GamePhase.MovingPiece && IsMyTurn())
+            {
+                <p class="h5 text-success">Click a highlighted piece to move!</p>
+            }
+            else if (gameState.Phase == GamePhase.GameOver)
+            {
+                <h4 class="text-success">Game Over! Winner: <span style="color: @gameState.WinnerColor;">@gameState.WinnerColor</span></h4>
+                <button class="btn btn-success mt-3" @onclick="PlayAgain">Play Again</button>
+            }
+            else
+            {
+                <p class="text-muted">Waiting for opponent...</p>
+            }
+            
+            <div class="mt-3">
+                <button class="btn btn-danger" @onclick="ForfeitGame">Forfeit Game</button>
+            </div>
+        </div>
+
+        <!-- Player List (compact) -->
+        <div class="mt-4">
+            <h6>Players:</h6>
+            <div class="row">
+                @foreach (var player in gameState.Players)
+                {
+                    <div class="col-3">
+                        <div class="card" style="border-color: @player.Color;">
+                            <div class="card-body p-2">
+                                <h6 style="color: @player.Color;">@player.Username</h6>
+                                <small>@player.Pieces.Count(p => p.IsAtHome) pieces home</small>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 }
@@ -95,7 +273,7 @@ else
     {
         if (!AuthService.IsLoggedIn)
         {
-            Navigation.NavigateTo("/login"); // Ensure user is logged in
+            Navigation.NavigateTo("/login");
             return;
         }
 
@@ -118,12 +296,6 @@ else
     private void HandleGameStateUpdate(GameStateDto newState)
     {
         Console.WriteLine($"[GamePage.razor] Received state update for GameId: {newState.GameId}, Phase: {newState.Phase}, Dice: {newState.DiceRoll}");
-        foreach (var p in newState.Players)
-        {
-            Console.WriteLine($"  Client-side Player {p.Username} ({p.Color}): Pieces = {string.Join(", ", p.Pieces.Select(pc => $"P{pc.Id}@{pc.Position}"))}");
-        }
-        Console.WriteLine("--------------------------------------------------");
-
         gameState = newState;
         InvokeAsync(StateHasChanged);
         Console.WriteLine("[GamePage.razor] StateHasChanged invoked.");
@@ -148,9 +320,123 @@ else
         InvokeAsync(StateHasChanged);
     }
 
+    private (double top, double left) GetBoardSquarePosition(int position)
+    {
+        // Simplified square positioning for main track (52 squares around the board)
+        // This creates a rectangular path around the board
+        
+        if (position <= 12) // Bottom row (left to right)
+            return (520, 180 + position * 30);
+        else if (position <= 25) // Right column (bottom to top)
+            return (520 - (position - 12) * 30, 540);
+        else if (position <= 38) // Top row (right to left)
+            return (130, 540 - (position - 25) * 30);
+        else // Left column (top to bottom)
+            return (130 + (position - 38) * 30, 180);
+    }
+
+    private bool IsSafeSpot(int position)
+    {
+        return Board.SafeSpots.Contains(position);
+    }
+
+    // NEW METHOD: Get color-specific safe spot class
+    private string GetSafeSpotClass(int position)
+    {
+        if (!IsSafeSpot(position))
+            return "";
+            
+        // Player starting positions get their color
+        return position switch
+        {
+            0 => "safe-spot-red",      // Red's starting position
+            13 => "safe-spot-blue",    // Blue's starting position
+            26 => "safe-spot-green",   // Green's starting position
+            39 => "safe-spot-yellow",  // Yellow's starting position
+            8 or 21 or 34 or 47 => "safe-spot-general", // General safe spots
+            _ => "safe-spot-general"   // Any other safe spots
+        };
+    }
+
+    private (double top, double left) GetPiecePosition(string color, int position, int pieceId)
+    {
+        // Handle base positions (-1)
+        if (position == -1)
+        {
+            return GetBasePosition(color, pieceId);
+        }
+        
+        // Handle home position (58)
+        if (position == 58)
+        {
+            return GetHomePosition(color, pieceId);
+        }
+        
+        // Handle home path (52-57)
+        if (position >= 52 && position <= 57)
+        {
+            return GetHomePathPosition(color, position - 52);
+        }
+        
+        // Handle main board (0-51)
+        if (position >= 0 && position <= 51)
+        {
+            var (squareTop, squareLeft) = GetBoardSquarePosition(position);
+            return (squareTop + 2, squareLeft + 2); // Slightly offset from square center
+        }
+        
+        return (0, 0); // Fallback
+    }
+
+    private (double top, double left) GetBasePosition(string color, int pieceId)
+    {
+        // Position pieces within their respective bases
+        var offsets = new[] { (10, 10), (10, 60), (60, 10), (60, 60) };
+        var (offsetTop, offsetLeft) = offsets[pieceId];
+        
+        return color switch
+        {
+            "Red" => (30 + offsetTop, 30 + offsetLeft),
+            "Blue" => (30 + offsetTop, 450 + offsetLeft),
+            "Green" => (450 + offsetTop, 450 + offsetLeft),
+            "Yellow" => (450 + offsetTop, 30 + offsetLeft),
+            _ => (0, 0)
+        };
+    }
+
+    private (double top, double left) GetHomePosition(string color, int pieceId)
+    {
+        // Position pieces in the center home area
+        var offsets = new[] { (0, 0), (0, 25), (25, 0), (25, 25) };
+        var (offsetTop, offsetLeft) = offsets[pieceId];
+        
+        return (275 + offsetTop, 275 + offsetLeft);
+    }
+
+    private (double top, double left) GetHomePathPosition(string color, int homePathIndex)
+    {
+        // Position pieces on the colored home path leading to center
+        return color switch
+        {
+            "Red" => (480 - homePathIndex * 30, 290),
+            "Blue" => (290, 210 + homePathIndex * 30),
+            "Green" => (210 + homePathIndex * 30, 290),
+            "Yellow" => (290, 480 - homePathIndex * 30),
+            _ => (0, 0)
+        };
+    }
+
+    private bool CanClickPiece(PlayerDto player, PieceDto piece)
+    {
+        return gameState != null &&
+               player.ConnectionId == myConnectionId &&
+               IsMyTurn() &&
+               gameState.Phase == GamePhase.MovingPiece &&
+               (!piece.IsAtHome || gameState.DiceRoll == 6);
+    }
+
     private bool IsMyTurn()
     {
-        // Now comparing with PlayerDto's Id
         return gameState?.Players?.FirstOrDefault(p => p.Id == gameState.CurrentPlayerId)?.ConnectionId == myConnectionId;
     }
 

@@ -21,5 +21,8 @@ namespace LudoApp.Shared
         [Required(ErrorMessage = "Password is required.")]
         [StringLength(50, MinimumLength = 6, ErrorMessage = "Password must be at least 6 characters long.")]
         public string Password { get; set; } = string.Empty;
+
+        public int Wins { get; set; } = 0; 
+
     }
 }

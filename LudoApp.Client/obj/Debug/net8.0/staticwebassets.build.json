@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jsOasFEeVjyeCspwcH7G86xsxii6HPYvVQ0sb1J5Cgc=",
+  "Hash": "56bK9ZNfI6wCaAHDwSjNiaGIJw1z+lgPstAOd7l4Apc=",
   "Source": "LudoApp.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -8508,6 +8508,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\wwwroot\\images\\ludo_board.png",
+      "SourceId": "LudoApp.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/ludo_board.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ludo_board.png"
     },
     {
       "Identity": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\wwwroot\\index.html",

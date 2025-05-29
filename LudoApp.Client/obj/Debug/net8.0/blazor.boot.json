@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "LudoApp.Client",
   "resources": {
-    "hash": "sha256-SLp+cwP8R0zuxK//lGVtHVFg9u2C2TMIzbnibtAsc7Y=",
+    "hash": "sha256-rVGWm85V+rLs5TU/ulnY3pP+30+1UiNQfJGGvehXb7s=",
     "jsModuleNative": {
       "dotnet.native.8.0.16.kzrzld7ksf.js": "sha256-RiGT44TFZmHOY+Oqvb8o8r+BJVWex6+dPxFxrOiWvFY="
     },
@@ -220,14 +220,14 @@
       "mscorlib.wasm": "sha256-Im6xq+lOse4P/VnAyrA3hwPstV67V5dB0EwQWcjipyE=",
       "netstandard.wasm": "sha256-PK0GLtj6kQVtZPzq0FZlnSdHh7geujg80LqKdJXA4pI=",
       "System.Private.CoreLib.wasm": "sha256-gEwccs7GbRSPGmeWBOKxNroYfyM+mZ7hqbP3ki1iwX0=",
-      "LudoApp.Shared.wasm": "sha256-MKUKyFD6PP6tYp7KUEw47PHfgeg4dcGDBn1CAaZ/TBM=",
+      "LudoApp.Shared.wasm": "sha256-LwCHpW23hdgCDYhxhn2KQkke+19rVXUUsg2WvE2LApA=",
       "LudoGame.Core.wasm": "sha256-IbLeptt4Y5FdpMzIcDAePJg62WBozGEexSqpYkUz3NQ=",
-      "LudoApp.Client.wasm": "sha256-IOrbWZ/dPCf0m34haWLxZSxMYJil/RgGKOZfnVYV7lo="
+      "LudoApp.Client.wasm": "sha256-Avlip1jf7wY2YGUS4vPgOyfpMTenVq2I4dqS3zH+Hjk="
     },
     "pdb": {
-      "LudoApp.Shared.pdb": "sha256-4tF6R8j2/RP0R1uiAtN3jI4cRrn7pNkYZPUnXi5/JxU=",
+      "LudoApp.Shared.pdb": "sha256-J0Iic4TkkCIt3YD+qwn64CHaxyZeNHncaLgC9OjNZwE=",
       "LudoGame.Core.pdb": "sha256-eT7Zemip3gjQ1dl2uqlqBr6GtQec2h1Rqa8sYSQIlUU=",
-      "LudoApp.Client.pdb": "sha256-ogbnmaIOA3pmtWSuzm2BJjwyt6KA46BzoQzlOQQJTc8="
+      "LudoApp.Client.pdb": "sha256-+xx74UlVotdnZeX2p1Vt2vq7/b/b70yB1Q2s14MAErU="
     }
   },
   "cacheBootResources": true,

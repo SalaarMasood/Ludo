@@ -20,7 +20,7 @@ namespace LudoApp.Shared
         public GameStateDto(LudoGame.Core.LudoGame coreGame)
         {
             GameId = coreGame.GameId;
-            
+
             // ← PROPER MAPPING: Create new DTO objects instead of direct assignment
             Players = coreGame.Players.Select(p => new PlayerDto
             {
@@ -35,7 +35,7 @@ namespace LudoApp.Shared
                     IsAtHome = piece.Position == -1
                 }).ToList()
             }).ToList();
-            
+
             CurrentPlayerId = coreGame.Players.Any() ? coreGame.Players[coreGame.CurrentPlayerIndex].Id : -1; // Handle case where players list might be empty (e.g., initial state)
             DiceRoll = coreGame.DiceRoll;
             Phase = coreGame.Phase;

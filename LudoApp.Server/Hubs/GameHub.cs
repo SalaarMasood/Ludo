@@ -10,10 +10,12 @@ namespace LudoApp.Server.Hubs
     public class GameHub : Hub
     {
         private readonly GameManager _gameManager;
+        private readonly MongoDbService _mongoService; // Add this
 
-        public GameHub(GameManager gameManager)
+        public GameHub(GameManager gameManager, MongoDbService mongoService) // Update constructor
         {
             _gameManager = gameManager;
+            _mongoService = mongoService; // Add this
         }
 
         // --- Connection Management ---
@@ -136,7 +138,17 @@ namespace LudoApp.Server.Hubs
                 string message = "";
                 if (outcome.IsGameOver)
                 {
-                    message = $"{outcome.Winner?.Username} Won!";
+                    // Increment wins for the winner
+                    if (outcome.Winner != null)
+                    {
+                        await _mongoService.IncrementUserWinsAsync(outcome.Winner.Username);
+                        message = $"🎉 {outcome.Winner.Username} Won! 🎉";
+                        Console.WriteLine($"[GameHub] {outcome.Winner.Username} won game {moveDto.GameId}. Wins incremented.");
+                    }
+                    else
+                    {
+                        message = "Game Over!";
+                    }
                 }
                 else if (outcome.OpponentCaptured)
                 {
@@ -196,6 +208,14 @@ namespace LudoApp.Server.Hubs
                 winnerColor = otherPlayers.First().Color; // Forfeit usually means other players win
                 // In a 4-player Ludo, if one forfeits, the others continue or all get a win.
                 // For bare minimum, just say the first remaining player wins.
+            }
+
+            // Increment wins for the winner if the game is over due to forfeit
+            if (winnerColor != null && otherPlayers.Any())
+            {
+                var winnerPlayer = otherPlayers.First();
+                await _mongoService.IncrementUserWinsAsync(winnerPlayer.Username);
+                Console.WriteLine($"[GameHub] {winnerPlayer.Username} won by forfeit in game {gameId}. Wins incremented.");
             }
 
             Console.WriteLine($"[GameHub] Player {forfeitingPlayer.Username} forfeited game {gameId}.");

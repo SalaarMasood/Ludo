@@ -112,4 +112,24 @@ app.MapHub<GameHub>("/gamehub");
 app.MapFallbackToFile("index.html");  // <–– any non-/api request goes to wwwroot/index.html
 // ────────────────────────────────────────────────────────────
 
+// Add this endpoint after your existing login/signup endpoints
+
+app.MapGet("/api/user/{username}/wins", async (string username, MongoDbService mongoService) =>
+{
+    if (string.IsNullOrWhiteSpace(username))
+    {
+        return Results.BadRequest("Username is required.");
+    }
+
+    var user = await mongoService.GetUserByUsernameAsync(username);
+    if (user == null)
+    {
+        return Results.NotFound("User not found.");
+    }
+
+    return Results.Ok(user.Wins.ToString());
+})
+.WithName("GetUserWins")
+.WithOpenApi();
+
 app.Run();

@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\wwwroot\\images\\ludo_board.png",
+      "PackagePath": "staticwebassets\\images\\ludo_board.png"
+    },
+    {
       "Id": "C:\\Users\\Salaar Masood\\Downloads\\Hadeed\\ludo\\LudoApp.Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
